@@ -109,6 +109,8 @@ readings_get_handler(void *request, void *response, uint8_t *buffer,
   int temp;
   int voltage;
 
+  printf("change\n\r");
+
   if(request != NULL) {
     REST.get_header_accept(request, &accept);
   }
